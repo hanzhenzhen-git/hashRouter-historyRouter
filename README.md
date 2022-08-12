@@ -8,7 +8,12 @@ hash路由和history路由的原理
       * 自己监听url的改变，根据url的改变自己改变页面的内容
    * url改变，同时不引起页面刷新有两个办法
       * 通过hash改变url
-      * 通过history模式改变url
+      * 通过h5中的history模式改变url
+   * url的hash，本质上监听location对象的hash值变化事件来实现
+   * history是利用浏览历史记录栈的API实现
+      
 
 ## hash路由和history路由的优缺点
+   * hash的优势时兼容性好，低版本IE都能运行；缺点是url中会有一个'#'号，显得不像真实路径
+   * history优势是url更优雅，缺点是不兼容低版本浏览器
 
