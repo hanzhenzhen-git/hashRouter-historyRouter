@@ -1,0 +1,2 @@
+# hashRouter-historyRouter
+hash路由和history路由的简单封装
