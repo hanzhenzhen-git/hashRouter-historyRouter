@@ -11,9 +11,15 @@ hash路由和history路由的原理
       * 通过h5中的history模式改变url
    * url的hash，本质上监听location对象的hash值变化事件来实现
    * history是利用浏览历史记录栈的API实现
-      
+   * history中以下6个方法改变URL而不刷新页面
+      * replaceState：替换原来的路径
+      * pushState：使用新的路径
+      * popState：路径的回退
+      * go：向前或向后改变路径
+      * forward：向前改变路径
+      * back：向后改变路径
 
 ## hash路由和history路由的优缺点
-   * hash的优势时兼容性好，低版本IE都能运行；缺点是url中会有一个'#'号，显得不像真实路径
+   * hash的优势是兼容性好，低版本IE都能运行；缺点是url中会有一个'#'号，显得不像真实路径
    * history优势是url更优雅，缺点是不兼容低版本浏览器
 
